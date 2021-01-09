@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image: linear-gradient(rgba(190, 184, 184, 0.418),rgb(255,255,255,0.4)) ,url(../imgs/Healthcare-Technology.jpg);
+  background-image: linear-gradient(rgba(190, 184, 184, 0.5),rgb(255,255,255,0.5)) ,url(../imgs/Healthcare-Technology.jpg);
 }
 
 
@@ -20,6 +20,13 @@ body {
     margin: auto;
 }
 
+
+.login-card{
+  padding:15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+
+}
 
 
 .form-control{
