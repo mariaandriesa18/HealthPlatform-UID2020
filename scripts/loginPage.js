@@ -12,6 +12,9 @@ function loginUser(){
         window.location.href = "../doctorPage/index.html"
     }else if(myEmail=='patient' && myPassword =='patient'){
         window.location.href = "../patientPage/index.html"
+    }
+    else if(myEmail=='nurse' && myPassword =='nurse'){
+        window.location.href = "../nursePage/index.html"
     }else{
         errorMessage.hidden= false;
         console.log('aa')
