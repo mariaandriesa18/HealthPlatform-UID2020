@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css" type="text/css">
+
     <title>Assitance Chat</title>
 </head>
 <body>
-    
+    <nav class="my-nav">
+        <button class="btn btn-lg btn-dark"> Back </button>
+    </nav>      
+
+    <div id="center-grid">
+        <div id="requests-card" class="display-card">
+            
+            <h2>Requests</h2>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Info</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <i class="fas fa-spinner"></i>  </td>
+                        <td>Request 5</td>
+                        <td>Processing</td>
+                        <td>25/12/2021</td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-check"></i>  </td>
+                        <td>Request 4</td>
+                        <td>Processing</td>
+                        <td>11/11/2021</td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-check"></i> </td>
+                        <td>Request 3</td>
+                        <td>Processing</td>
+                        <td>15/10/2021</td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-check"></i>  </td>
+                        <td>Request 2</td>
+                        <td>Processing</td>
+                        <td>11/10/2021</td>
+                    </tr>
+                    <tr>
+                        <td> <i class="fas fa-check"></i>  </td>
+                        <td>Request 1</td>
+                        <td>Processing</td>
+                        <td>10/09/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="chat-card" class="display-card">
+            <div id="chat-screen">
+                <div class="chat-left">
+                    <div class="chat-message">
+                        <h6>Ehealth Virtual Assitant</h6>
+                        <p class="chat-content">Hello! How can we help you?</p>
+                        <p class="send-data">09.01.2021, 23:21:47</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="chat-control">
+                <input id="newMessage" size="50" type="text">
+                <button class="btn btn-md btn-dark" onclick="sendMessage()">Send</button>                
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
