@@ -1,0 +1,60 @@
+#patientInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 100px;
+}
+
+#patientInfoLeft {
+    display: flex;
+}
+
+#userIcon {
+    font-size: 120px;
+    color: rgb(192, 192, 192);
+    margin-left: 20px;
+}
+
+#patientData {
+    margin-left: 25px;
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+mark.green {
+    color: green;
+    background-color: transparent;
+}
+
+#backToPatientPage {
+    margin-top: 40px;
+    height: 40px;
+    width: 150px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-left: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#infoList {
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#tick {
+    color: green;
+}
+
+#cross {
+    color: red;
+}
+
+#exclamationMark {
+    color: orange;
+}
