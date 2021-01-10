@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('#clickable-row').click(function() {
         window.location = $(this).data("href");
@@ -14,4 +16,8 @@ $(document).ready(function () {
     $('#backToAllPatients').click(function() {
         window.location.href = "patientsList.html";
     })
+
+    particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 })

@@ -6,4 +6,8 @@ $(document).ready(function() {
     $('#backToPatientsList').click(function() {
         window.location.href = "patientsList.html";
     })
+
+    particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 })

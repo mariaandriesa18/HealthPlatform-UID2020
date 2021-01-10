@@ -47,6 +47,28 @@ h1 {
     padding-right: 100px;
 }
 
+#infoList th {
+    text-align: center;
+    background-color: rgb(23, 151, 151);
+}
+
+#infoList tr:nth-child(even) {
+    background-color: rgb(214, 214, 214);
+}
+
+#infoList tr:hover {
+    background-color: rgb(189, 245, 239);
+}
+
+tbody {
+    border-color: black;
+    text-align: center;
+}
+
+#center {
+    text-align: center;
+}
+
 #tick {
     color: green;
 }

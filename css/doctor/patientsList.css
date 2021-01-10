@@ -1,0 +1,47 @@
+#topNav {
+    margin-top: 50px;
+    padding: 12px;
+    background-color:rgb(214, 214, 214);
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchContainer {
+    margin-right: 50%;
+}
+
+#backToDoctorPage {
+    color: white;
+    background-color: black;
+}
+
+#patientsList {
+    margin-top: 20px;
+}
+
+#patientsList th {
+    text-align: center;
+    background-color: rgb(23, 151, 151);
+}
+
+#patientsList tr:nth-child(even) {
+    background-color: rgb(214, 214, 214);
+}
+
+#patientsList tr:hover {
+    background-color: rgb(189, 245, 239);
+}
+
+tbody {
+    border-color: black;
+}
+
+#center {
+    text-align: center;
+}
+
+#userIcon {
+    font-size: 25px;
+    color: gray;
+    margin-right: 15px;
+}

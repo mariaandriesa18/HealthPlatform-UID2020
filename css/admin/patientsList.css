@@ -4,23 +4,47 @@
     background-color:rgb(214, 214, 214);
     display: flex;
     justify-content: space-between;
+    width: 70%;
 }
 
 #searchContainer {
     margin-right: 50%;
 }
 
-#back {
+#backToAdminPage {
     color: white;
     background-color: black;
 }
 
 #patientsList {
     margin-top: 20px;
+    width: 70%;
+}
+
+#patientsList th {
+    text-align: center;
+    background-color: rgb(23, 151, 151);
+}
+
+#patientsList tr:nth-child(even) {
+    background-color: rgb(214, 214, 214);
+}
+
+tbody {
+    border-color: black;
 }
 
 #userIcon {
     font-size: 25px;
     color: gray;
     margin-right: 15px;
+}
+
+#center {
+    text-align: center;
+}
+
+#selectOptions {
+    width: 60%;
+    border-color: black;
 }

@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a570b5-a0d0-4e3b-8f5a-d8ae399f5fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nursePage/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nursePage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nursePage/patientDetails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nursePage/patientsList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nursePage/searchVasile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/nurse/patientsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/patientDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/patientDetails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctorPage/searchVasile.html" beforeDir="false" afterPath="$PROJECT_DIR$/doctorPage/searchVasile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/nursePage" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,6 +52,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="04a570b5-a0d0-4e3b-8f5a-d8ae399f5fa4" name="Default Changelist" comment="" />
@@ -82,5 +79,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
