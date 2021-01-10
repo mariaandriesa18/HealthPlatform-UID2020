@@ -28,3 +28,9 @@ function sendMessage(){
     chatScreen.scrollBy(0,10000);
 
 }
+
+
+
+particlesJS.load('particles-js', '../../scripts/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+});

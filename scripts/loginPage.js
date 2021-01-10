@@ -2,6 +2,7 @@ const userEmail = document.getElementById('inputEmail')
 const userPassword = document.getElementById('inputPassword')
 const errorMessage = document.getElementById('error-message-login')
 
+
 function loginUser(){
     const myEmail = userEmail.value;
     const myPassword = userPassword.value;
@@ -21,3 +22,8 @@ function loginUser(){
     }
 
 }
+
+
+particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+});
