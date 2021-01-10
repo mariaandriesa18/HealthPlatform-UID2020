@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#row2{
+    margin-top: 3%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(138, 138, 138, 0.548);
+    height: 120px;
+    border-radius: 5px;
+}
+#row2 input{
+    border-radius: 3px;
+}
+
+#row1 {
+    margin-top: 5%;
+}
+#row3{
+    margin-top: 5%;
+}
+#row3 table{
+    margin-top: 3%;
+}

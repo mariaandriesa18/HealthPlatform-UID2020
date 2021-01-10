@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
+    <title>Symptom Journal</title>
+</head>
+<body>
+    
+    <header class="site-header sticky-top py-1" style="height: 55px;">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+           <a class="nav-item py-2 d-none d-md-inline-block" href="../patientPage/index.html" id="back-btn">
+               BACK
+              </a>
+        </nav>
+    </header>
+    <div>
+        <img id="cross1" src="../imgs/cross1.png">
+        <img id="cross2" src="../imgs/cross (2).png">
+    </div>
+    <div class="container symptoms-header">
+        <div class="row row-cols-2 ">
+            <div class="col">
+                <h1>SYMPTOMS JOURNAL</h1>
+            </div>
+            <div class="col">
+                <button href="" type="button" class="btn btn-outline-primary">
+                    <a href="journal_entry.html">
+                        ADD ENTRY
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="symptoms-tb">
+        <div class="container" style="position: absolute; top: 30%; left: 15%;">
+            <table class="table table-striped">
+                <thead style="font-size:20px;">
+                    <tr>
+                        <th>DATE</th>
+                        <th>SYMPTOMS</th>
+                        <th>MY NOTES</th>
+                        <th>OVERALL MOOD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>FMM 1</th>
+                        <th>FMM 2</th>
+                        <th>FMM 3</th>
+                        <th>FMM 4</th>
+                    </tr>
+                    <tr>
+                        <th>FMM 1</th>
+                        <th>FMM 2</th>
+                        <th>FMM 3</th>
+                        <th>FMM 4</th>
+                    </tr>
+               
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../scripts/home-page.js"></script>
+</body>
+</html>

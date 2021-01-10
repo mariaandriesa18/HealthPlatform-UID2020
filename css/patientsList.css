@@ -10,10 +10,9 @@
     margin-right: 50%;
 }
 
-#backToDoctorPage {
+#back {
     color: white;
     background-color: black;
-    width: 150px;
 }
 
 #patientsList {

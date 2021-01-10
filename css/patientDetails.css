@@ -41,16 +41,6 @@ h1 {
     color: rgb(95, 95, 95);
 }
 
-#buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-#final_button {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 #realTimeInfo {
     font-size: 20px;
     width: 170px;
@@ -58,12 +48,6 @@ h1 {
     border-color: black;
     background-color: rgb(236, 233, 233);
     margin-left: 12%;
-}
-
-#backToPatientsList {
-    margin-right: 5%;
-    background-color: black;
-    width: 130px;
 }
 
 #medicationBar {

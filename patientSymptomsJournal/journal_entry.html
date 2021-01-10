@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
+    <title>Journal Entry</title>
+</head>
+<body>
+    
+    <header class="site-header sticky-top py-1" style="height: 55px;">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+           <a class="nav-item py-2 d-none d-md-inline-block" href="../patientPage/index.html" id="back-btn">
+               BACK
+              </a>
+        </nav>
+    </header>
+    <div>
+        <img id="cross1" src="../imgs/cross1.png">
+        <img id="cross2" src="../imgs/cross (2).png">
+    </div>
+
+    <div class="container">
+        <div class="row" style="height: 200px;">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; position: absolute; top:20%; left: 10%;">
+                <b>NEW ENTRY: Please enter your current symptoms and how you are feeling</b> 
+            </h1>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col">
+                <h3>SYMPTOMS</h3> 
+            </div>
+            <div class="col">
+                <input type="text" style="width: 100%; margin-left: -100px; height:50px; font-size: 20px;">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col">
+                <h3>HOW ARE YOU FEELING?</h3> 
+            </div>
+            <div class="col">
+                <select id="feeling">
+                    <option value = "#FFFFFF">VERY GOOD</option>
+                    <option value = "#FF0000">GOOD</option>
+                    <option value = "#FFCC00">BEARABLE</option>
+                    <option value = "#FFFF00">BAD</option>
+                    <option value = "#00FF00">VERY BAD</option>
+                   
+                </select>
+            </div>
+            
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col">
+                <h3>NOTES</h3> 
+            </div>
+            <div class="col">
+                <input type="text" style="width: 100%; margin-left: -100px; height: 200px; font-size: 20px;">
+            </div>
+        </div>
+        <div class="row">
+            <button href="" type="button" class="btn btn-outline-primary" style="width: 50%; margin-top: 90px; margin-left: 250px; height: 60px; font-size:30px;">
+                SAVE ENTRY
+            </button>
+        </div>
+        
+    </div>
+    <div id="entry-head" class="container">
+
+    </div>
+    <script src="../scripts/home-page.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

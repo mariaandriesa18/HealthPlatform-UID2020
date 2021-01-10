@@ -1,0 +1,35 @@
+.symptoms-header{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+.symptoms-header .row .col h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+.symptoms-header .row .col button{
+    font-size: 25px;
+    height: 60px;
+    width: 300px;
+    margin-left: 330px;
+}
+
+.symptoms-tb .container{
+    height: 400px;
+}
+
+#cross1{
+    position: absolute;
+    left: 0;
+}
+#cross2{
+    position: absolute;
+    right: 0;
+}
+
+#feeling{
+    width: 100%;
+    margin-left: -100px;
+    height: 50px;
+    font-size: 20px;
+}
