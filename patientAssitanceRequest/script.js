@@ -5,3 +5,7 @@ function assistChat(){
 particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
     console.log('callback - particles.js config loaded');
 });
+
+function goBack(){
+    window.location.href = "../patientPage/index.html";
+}
