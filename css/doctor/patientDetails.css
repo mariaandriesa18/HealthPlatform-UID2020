@@ -8,7 +8,7 @@
     width: 60%;
 }
 
-#userIcon {
+#userDetailsIcon {
     font-size: 120px;
     color: rgb(192, 192, 192);
     margin-left: 20px;
@@ -67,26 +67,4 @@ h1 {
     background-color:rgb(214, 214, 214);
     display: flex;
     justify-content: space-between;
-}
-
-#medicationsList {
-    margin-top: 20px;
-}
-
-#medicationsList th {
-    text-align: center;
-    background-color: rgb(23, 151, 151);
-}
-
-#medicationsList tr:nth-child(even) {
-    background-color: rgb(214, 214, 214);
-}
-
-#medicationsList tr:hover {
-    background-color: rgb(189, 245, 239);
-}
-
-tbody {
-    border-color: black;
-    text-align: center;
 }

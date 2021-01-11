@@ -10,7 +10,7 @@
     display: flex;
 }
 
-#userIcon {
+#userDetailsIcon {
     font-size: 120px;
     color: rgb(192, 192, 192);
     margin-left: 20px;
@@ -39,34 +39,6 @@ h1 {
     margin-top: 30px;
     margin-left: 250px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#infoList {
-    margin-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-#infoList th {
-    text-align: center;
-    background-color: rgb(23, 151, 151);
-}
-
-#infoList tr:nth-child(even) {
-    background-color: rgb(214, 214, 214);
-}
-
-#infoList tr:hover {
-    background-color: rgb(189, 245, 239);
-}
-
-tbody {
-    border-color: black;
-    text-align: center;
-}
-
-#center {
-    text-align: center;
 }
 
 #tick {
