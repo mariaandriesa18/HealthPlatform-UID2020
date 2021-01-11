@@ -1,6 +1,6 @@
 const newMessage = document.getElementById('newMessage');
 const chatScreen =document.getElementById('chat-screen')
-
+const probName = document.getElementById('prob-name')
 
 
 function sendMessage(){
@@ -32,9 +32,13 @@ function sendMessage(){
 
 
 particlesJS.load('particles-js', '../../scripts/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
+    console.log('callback - particles.js config loaded')
 });
 
 function goBack(){
     window.location.href = "../index.html";
 }
+
+let myProbName = localStorage.getItem('prob-name');
+probName.innerHTML = myProbName;
+localStorage.clear();

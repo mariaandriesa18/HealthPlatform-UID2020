@@ -1,5 +1,9 @@
+const confirmModal = document.getElementById('confirm-modal')
+const myProblem = document.getElementById('my-problem');
+
 function assistChat(){
-    window.location.href = "./PatientAssitanceChat";
+    confirmModal.hidden=false;
+   
 }
 
 particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
@@ -8,4 +12,14 @@ particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function(
 
 function goBack(){
     window.location.href = "../patientPage/index.html";
+}
+
+function confirmRequest(){
+    const prob = myProblem.value;
+    localStorage.setItem('prob-name',prob);
+    window.location.href = "./PatientAssitanceChat";
+}
+
+function cancelRequest(){
+    confirmModal.hidden=true;
 }

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    
+      <link rel="stylesheet" href="index.css">
+
     <title>Patient Dashboard</title>
 </head>
 <body>
@@ -26,7 +29,25 @@
     </header>
     <main>
 
+      <div class="notification-screen">
+        <ul class="list-group">
+          <li class="list-group-item item-top" id="not-top-item" onclick="setNotificationScreen()">
+            
+            <span id="notification-text"> Notifications </span> <i hidden id="notification-cancel" class="fas fa-times icon-list-item"></i>
+            
+          </li>
+          <li hidden class="list-group-item notification-item" onclick="deleteEl(this)">
+            <i class="fas fa-check"></i> Your data has remained in normal parameters<i class="fas fa-times icon-list-item"></i>
+          </li>
+          <li hidden class="list-group-item notification-item" onclick="deleteEl(this)">
+            <i class="fas fa-times cancel-icon"></i> Appoinment cancelled by doctor<i class="fas fa-times icon-list-item"></i>
+          </li>
+          
+        </ul>
+      </div>
+
     </main>
     <script src="../scripts/home-page.js"></script>
+    <script src="../scripts/patient/patientMainPage.js"></script>
 </body>
 </html>

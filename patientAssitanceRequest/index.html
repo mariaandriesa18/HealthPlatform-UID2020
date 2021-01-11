@@ -9,14 +9,25 @@
     <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
 </head>
 <body>
+    <div id="confirm-modal" hidden>
+        <div class="confirm-box">
+            <p>You will be redirected to assistance chat. Are you sure you want to continue?</p>
+            <div style>
+                <button class="btn btn-lg btn-dark" onclick="confirmRequest()">Yes</button>
+                <button class="btn btn-lg btn-dark" onclick="cancelRequest()">No</button>
+            </div>
+        </div>
+    </div>
     <nav class="my-nav">
         <button class="btn btn-lg btn-dark" onclick="goBack()"> Back </button>
     </nav>
     <div id="center-grid">
-        <div id="particles-js"></div>
+        <div id="particles-js">
+        </div>
+        
         <div id="message-card" class="display-card">
             <h2>Tell us what is the matter</h2>
-            <textarea rows="5" placeholder="My problem is..."></textarea>
+            <input type="text" style="width:70%" id="my-problem" placeholder="Short description">
             <div class="send-form-control">
                 <button class="btn btn-md btn-dark pulse" onclick="assistChat()"> Send </button>
             </div>
