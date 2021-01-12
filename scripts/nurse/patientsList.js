@@ -8,7 +8,7 @@ $(document).ready(function () {
     })
     
     $('#backToNursePage').click(function() {
-        window.location.href = "index.html";
+        window.location.href = "/nursePage";
     })
     
     $('#backToAllPatients').click(function() {
