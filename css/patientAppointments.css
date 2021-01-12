@@ -27,3 +27,17 @@ body {
 #row3 table{
     margin-top: 3%;
 }
+
+.my-nav{
+    
+    margin-left: 15%;
+    box-sizing: border-box;
+    padding: 20px;
+    height:12vh;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:first baseline;
+}
+

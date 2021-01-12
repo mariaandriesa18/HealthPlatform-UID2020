@@ -8,11 +8,17 @@
       rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
+  
+    <link rel="stylesheet" href="../css/commons/particles.css">
+    
+    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../scripts/journal_entry.js"></script>
     <title>Journal Entry</title>
 </head>
 <body>
     
-    <header class="site-header sticky-top py-1" style="height: 55px;">
+    <!-- <header class="site-header sticky-top py-1" style="height: 55px;">
         <nav class="container d-flex flex-column flex-md-row justify-content-between">
            <a class="nav-item py-2 d-none d-md-inline-block" href="../patientPage/index.html" id="back-btn">
                BACK
@@ -22,20 +28,26 @@
     <div>
         <img id="cross1" src="../imgs/cross1.png">
         <img id="cross2" src="../imgs/cross (2).png">
+    </div> -->
+    <div id="particles-js">
     </div>
-
+    <nav  style="margin-top: 30px; margin-left: 15%;">
+        <button class="btn btn-lg btn-dark" onclick="window.location.href='symptoms_journal.html';" style="width:150px;" > 
+            BACK 
+        </button>
+    </nav> 
     <div class="container">
         <div class="row" style="height: 200px;">
-            <h1 style="font-family: Arial, Helvetica, sans-serif; position: absolute; top:20%; left: 10%;">
+            <h1 style="width:65%;font-family: Arial, Helvetica, sans-serif; position: absolute; top:25%; left: 15%; background-color: rgba(63, 209, 209, 0.335);">
                 <b>NEW ENTRY: Please enter your current symptoms and how you are feeling</b> 
             </h1>
         </div>
-        <div class="row" style="margin-top: 100px;">
+        <div class="row" style="margin-top: 150px;">
             <div class="col">
                 <h3>SYMPTOMS</h3> 
             </div>
             <div class="col">
-                <input type="text" style="width: 100%; margin-left: -100px; height:50px; font-size: 20px;">
+                <input id="sympInput" type="text" style="width: 100%; margin-left: -100px; height:50px; font-size: 15px;">
             </div>
         </div>
         <div class="row" style="margin-top: 100px;">
@@ -43,12 +55,12 @@
                 <h3>HOW ARE YOU FEELING?</h3> 
             </div>
             <div class="col">
-                <select id="feeling">
-                    <option value = "#FFFFFF">VERY GOOD</option>
-                    <option value = "#FF0000">GOOD</option>
-                    <option value = "#FFCC00">BEARABLE</option>
-                    <option value = "#FFFF00">BAD</option>
-                    <option value = "#00FF00">VERY BAD</option>
+                <select id="feelingInput">
+                    <option value="VERY GOOD">VERY GOOD</option>
+                    <option value="GOOD">GOOD</option>
+                    <option value="BEARABLE">BEARABLE</option>
+                    <option value="BAD">BAD</option>
+                    <option value="VERY BAD">VERY BAD</option>
                    
                 </select>
             </div>
@@ -59,11 +71,11 @@
                 <h3>NOTES</h3> 
             </div>
             <div class="col">
-                <input type="text" style="width: 100%; margin-left: -100px; height: 200px; font-size: 20px;">
+                <input id="notesInput" type="text" style="width: 100%; margin-left: -100px; height: 100px; font-size: 15px;">
             </div>
         </div>
         <div class="row">
-            <button href="" type="button" class="btn btn-outline-primary" style="width: 50%; margin-top: 90px; margin-left: 250px; height: 60px; font-size:30px;">
+            <button onclick="AddEntry()" type="button" class="btn btn-outline-dark" style="width: 50%; margin-top: 90px; margin-left: 250px; height: 60px; font-size:30px;">
                 SAVE ENTRY
             </button>
         </div>

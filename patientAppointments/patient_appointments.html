@@ -9,20 +9,29 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
     <link rel="stylesheet" href="../css/patientAppointments.css">
+    <link rel="stylesheet" href="../css/commons/particles.css">
+    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>Appointments</title>
 </head>
 <body >
     
-    <header class="site-header sticky-top py-1" style="height: 55px;">
+    <!-- <header class="site-header sticky-top py-1" style="height: 55px;">
         <nav class="container d-flex flex-column flex-md-row justify-content-between">
            <a class="nav-item py-2 d-none d-md-inline-block" href="../patientPage/index.html" id="back-btn">
                BACK
               </a>
         </nav>
-    </header>
+    </header> -->
+    <div id="particles-js">
+    </div>
+    <nav class="my-nav">
+        <button class="btn btn-lg btn-dark" onclick="window.location.href='../patientPage/index.html';" style="width:150px;" > 
+            BACK 
+        </button>
+    </nav> 
     <div>
-        <img id="cross1" src="../imgs/cross1.png">
-        <img id="cross2" src="../imgs/cross (2).png">
+        
     </div>
     <div class="container">
         <div class="row" id="row1">
@@ -33,19 +42,20 @@
         <div class="row" id="row2">
             <div class="col">
                 <h4>DATE</h4>
-                <input type="text" id="app-date" name="app-date">
+                <input type="text" id="dateInput" name="app-date">
+                
             </div>
             <div class="col">    
                 <h4>HOUR</h4>
-                <input type="text" id="app-date" name="app-date">
+                <input type="text" id="hourInput" name="app-date">
             </div>
             <div class="col">
                 <h4>SYMPTOMS</h4>
-                <input type="text" id="app-date" name="app-date">
+                <input type="text" id="symptomsInput" name="app-date">
             </div>
             <div class="col">
-                <button href="" type="button" class="btn btn-outline-dark" style="padding-top: 20px; background-color: rgba(0, 0, 0, 0.719); " >
-                   <p style="font-size: 20px; color:white"> NEW APPOINTMENT</p>
+                <button onclick="NewAppointment()" type="button" class="btn btn-outline-dark" style="padding-top: 10px;padding-bottom: 10px; background-color: rgba(0, 0, 0, 0.719); font-size: 20px; color:white" >
+                    NEW APPOINTMENT
                 </button>
             </div>
             
@@ -53,38 +63,25 @@
 
         <div class="row" id="row3">
             <h3>Here you can see a history of your appointments, as well as the current upcoming appointment.</h3>
-            <table class="table" >
+            <table class="table" id="myTable" >
                 <thead style="font-size: 25px; ">
                     <tr>
                         <th>DATE</th>
                         <th>HOUR</th>
                         <th>SYMPTOMS</th>
                         <th>STATUS</th>
-                        <th>  </th>
+                        <th> CANCEL APPOINTMENT</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>DATE</th>
-                        <th>HOUR</th>
-                        <th>SYMPTOMS</th>
-                        <th>Upcoming</th>
-                        <th><button type="button" class="btn btn-outline-dark">CANCEL</button></button></th>
+                        <td>DATE</td>
+                        <td>HOUR</td>
+                        <td>SYMPTOMS</td>
+                        <td>Upcoming</td>
+                        <td><button type="button" class="btn btn-outline-dark" onclick="deleteRow(this)">CANCEL</button></button></td>
                     </tr>
-                    <tr>
-                        <th>DATE</th>
-                        <th>HOUR</th>
-                        <th>SYMPTOMS</th>
-                        <th>Completed</th>
-                        
-                    </tr>
-                    <tr>
-                        <th>DATE</th>
-                        <th>HOUR</th>
-                        <th>SYMPTOMS</th>
-                        <th>Completed</th>
-                     
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -93,5 +90,7 @@
         </div>
     </div>
     <script src="../scripts/home-page.js"></script>
+    <script src="../scripts/patient/patientAppointments.js"></script>
+    
 </body>
 </html>
