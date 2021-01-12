@@ -40,3 +40,11 @@ function deleteRow(r) {
   }
 
   
+function cancelRequest(){
+    confirmModal.hidden=true;
+}
+
+function assistChat(){
+    confirmModal.hidden=false;
+   
+}

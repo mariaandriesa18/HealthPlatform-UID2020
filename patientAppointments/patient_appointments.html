@@ -15,14 +15,15 @@
     <title>Appointments</title>
 </head>
 <body >
-    
-    <!-- <header class="site-header sticky-top py-1" style="height: 55px;">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between">
-           <a class="nav-item py-2 d-none d-md-inline-block" href="../patientPage/index.html" id="back-btn">
-               BACK
-              </a>
-        </nav>
-    </header> -->
+    <div id="confirm-modal" hidden>
+        <div class="confirm-box">
+            <p> A new appointment with your doctor will be created. Are you sure you want to continue?</p>
+            <div style>
+                <button class="btn btn-lg btn-dark" onclick="confirmRequest()">Yes</button>
+                <button class="btn btn-lg btn-dark" onclick="cancelRequest()">No</button>
+            </div>
+        </div>
+    </div>
     <div id="particles-js">
     </div>
     <nav class="my-nav">

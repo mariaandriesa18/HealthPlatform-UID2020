@@ -44,3 +44,33 @@ body {
 #wrongDate {
    visibility: hidden;
 }
+
+  
+#confirm-modal{
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index:2;
+    height:100vh;
+    width:100%;
+    background-color: rgba(240, 240, 240, 0.75);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirm-box{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color:  rgba(240, 240, 240, 1); ;
+    font-size:111%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .confirm-box div button{
+    margin:10px;
+  }
