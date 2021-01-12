@@ -41,3 +41,6 @@ body {
     justify-content:first baseline;
 }
 
+#wrongDate {
+   visibility: hidden;
+}
