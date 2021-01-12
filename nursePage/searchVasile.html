@@ -5,15 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Patients</title>
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/patientsList.css" type="text/css">
+        <link rel="stylesheet" href="../css/doctor/patientsList.css" type="text/css">
         <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
-        <link rel="stylesheet" href="../css/searchVasile.css" type="text/css">
+        <link rel="stylesheet" href="../css/doctor/searchVasile.css" type="text/css">
+        <link rel="stylesheet" href="../css/commons/particles.css" type="text/css">
+        <link rel="stylesheet" href="../css/commons/tableStyle.css" type="text/css">
 
         <script src="../scripts/jquery.js" type="text/javascript"></script>
-        <script src="../scripts/patientsList.js" type="text/javascript"></script>
+        <script src="../scripts/doctor/patientsList.js" type="text/javascript"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
 
     <body>
+        <div id="particles-js"></div>
         <div id="topNav" class="container">
             <div class="input-group" id="searchContainer">
                 <input type="text" class="form-control" placeholder="Search patient...">
@@ -24,7 +28,7 @@
             <button type="button" class="btn btn-secondary" id="backToAllPatients">Back</button>
         </div>
 
-        <div id="patientsList" class="container">
+        <div id="list" class="container">
             <table class="table">
                 <thead>
                     <tr>
@@ -37,11 +41,21 @@
                 </thead>
                 <tbody>
                     <tr id="clickable-row" data-href="patientDetails.html">
-                        <td>
+                        <td id="left">
                             <i id="userIcon" class="fas fa-user-circle"></i>
-                            Vasile Popa
+                            Vasile Pop
                         </td>
-                        <td>57</td>
+                        <td>70</td>
+                        <td class="link-success">Good</td>
+                        <td>22/10/2020</td>
+                        <td>22/11/2020</td>
+                    </tr>
+                    <tr id="clickable-row" data-href="patientDetails.html">
+                        <td id="left">
+                            <i id="userIcon" class="fas fa-user-circle"></i>
+                            Vasile Marin
+                        </td>
+                        <td>70</td>
                         <td class="link-danger">Bad</td>
                         <td>03/11/2020</td>
                         <td>03/05/2021</td>

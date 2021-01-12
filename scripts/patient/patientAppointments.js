@@ -1,3 +1,9 @@
+const confirmModal= document.getElementById('confirm-modal')
+
+
+function confirmNewAppoinment(){
+    confirmModal.hidden=false;
+}
 
 function NewAppointment(){
     var table = document.getElementById("myTable");
@@ -44,7 +50,18 @@ function cancelRequest(){
     confirmModal.hidden=true;
 }
 
+function confirmRequest(){
+    NewAppointment();
+    confirmModal.hidden=true;
+}
+
+
 function assistChat(){
     confirmModal.hidden=false;
    
 }
+
+
+particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+});

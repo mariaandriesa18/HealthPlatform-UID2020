@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
-  
+    
     <link rel="stylesheet" href="../css/commons/particles.css">
     <script src="../scripts/journal_entry.js"></script>
     <title>Symptom Journal</title>
@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="symptoms-tb">
-        <div class="container" style="position: absolute; top: 30%; left: 15%;">
+        <div class="container" style="position: absolute; top: 34%; left: 7%;">
             <table class="table" id="symptomsTable">
                 <thead style="font-size:20px;">
                     <tr>
@@ -63,10 +63,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>FMM 1</td>
-                        <td>FMM 2</td>
-                        <td>FMM 3</td>
-                        <td>FMM 4</td>
+                        <td>11/11/2011</td>
+                        <td>Headache</td>
+                        <td>Severe headache this time</td>
+                        <td>Very Bad</td>
                         <td><button type="button" class="btn btn-outline-dark" onclick="deleteRow(this)">DELETE</button></button></td> </tr>
                     </tr>
                
@@ -75,6 +75,12 @@
         </div>
     </div>
     <script src="../scripts/home-page.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../scripts/journal_entry.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../scripts/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+        }); 
+    </script>
 </body>
 </html>

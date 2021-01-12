@@ -1,6 +1,7 @@
+
 .symptoms-header{
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 20%;
 }
 .symptoms-header .row .col h1{
@@ -11,7 +12,7 @@
     font-size: 25px;
     height: 60px;
     width: 300px;
-    margin-left: 330px;
+    margin-left: 35%;
 }
 
 .symptoms-tb .container{
