@@ -20,12 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04a570b5-a0d0-4e3b-8f5a-d8ae399f5fa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/doctorPage/searchVasile.html" beforeDir="false" afterPath="$PROJECT_DIR$/doctorPage/searchVasile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminPage/addUser.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminPage/newUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminPage/particlesjs-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/admin/newUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/nurse/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminPage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminPage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nursePage/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/nursePage/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nursePage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nursePage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nursePage/patientsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/nursePage/patientsList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/doctor/patientsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/doctor/patientsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/nurse/patientsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/nurse/patientsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,19 +57,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nursePage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adminPage" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\project_UID\HealthPlatform-UID2020\nursePage" />
-      <recent name="C:\project_UID\HealthPlatform-UID2020\scripts\nurse" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\project_UID\HealthPlatform-UID2020\nursePage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project_UID\HealthPlatform-UID2020\adminPage" />
+      <recent name="C:\project_UID\HealthPlatform-UID2020\nursePage" />
+      <recent name="C:\project_UID\HealthPlatform-UID2020\scripts\nurse" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610197680347</updated>
       <workItem from="1610197681453" duration="937000" />
+      <workItem from="1610397843770" duration="6770000" />
     </task>
     <servers />
   </component>
@@ -80,5 +111,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1610398572074">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1610398572074" />
   </component>
 </project>

@@ -22,13 +22,52 @@ html,body{
   main{
     height: 92%;
     background-image: url("../imgs/Healthcare-Technology.jpg");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .nav-item:hover{
     border-bottom: 2px solid #8e8e8e;
 }
 
+.emergency_div{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-color: rgba(220,220,220,0.8);
+    border-radius: 10px;
+}
 
+
+.chat_div{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(220,220,220,0.8);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.excl_div{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    color: red;
+    margin-bottom: 10px;
+    font-size: 250%;
+
+}
+
+
+#text_for_chat_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
 
 .nav-item{
     font-size: 1.1em;
