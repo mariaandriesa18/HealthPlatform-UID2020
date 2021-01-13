@@ -6,7 +6,8 @@ function confirmNewAppoinment(){
 }
 
 function NewAppointment(){
-    var table = document.getElementById("myTable");
+    document.getElementById("wrongDate").style.visibility = "hidden";
+    var table = document.getElementById("list");
 
     var dateVal = document.getElementById("dateInput").value;
     var hourVal = document.getElementById("hourInput").value;
@@ -14,11 +15,11 @@ function NewAppointment(){
 
     var dtRegex = new RegExp("^([0]?[1-9]|[1-2]\\d|3[0-1])-(JAN|FEB|MAR|APR|MAY|JUN|JULY|AUG|SEP|OCT|NOV|DEC)-[1-2]\\d{3}$", 'i');
     
-    if( dtRegex.test(dateVal) == false){
+    if( dtRegex.test(dateVal) == false ){
         document.getElementById("wrongDate").style.visibility = "visible";
-        document.getElementById("dateInput").value = " ";
-        document.getElementById("hourInput").value = " ";
-        document.getElementById("symptomsInput").value = " ";
+        document.getElementById("dateInput").value = "";
+        document.getElementById("hourInput").value = "";
+        document.getElementById("symptomsInput").value = "";
     }else{
         var row = table.insertRow(1);
 
@@ -42,7 +43,7 @@ function NewAppointment(){
 
 function deleteRow(r) {
     var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById("myTable").deleteRow(i);
+    document.getElementById("list").deleteRow(i);
   }
 
   

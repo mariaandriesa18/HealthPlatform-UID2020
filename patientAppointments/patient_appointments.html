@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/patientsymptomsJournal.css">
     <link rel="stylesheet" href="../css/patientAppointments.css">
     <link rel="stylesheet" href="../css/commons/particles.css">
+    <link rel="stylesheet" href="../css/commons/tableStyle.css" type="text/css">
     
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>Appointments</title>
@@ -48,7 +49,7 @@
             </div>
             <div class="col">    
                 <h4>HOUR</h4>
-                <input type="text" id="hourInput" name="app-date">
+                <input type="number" min="1" max="24" id="hourInput" name="app-date">
             </div>
             <div class="col">
                 <h4>SYMPTOMS</h4>
@@ -66,7 +67,7 @@
         </div>
         <div class="row" id="row3">
             <h3>Here you can see a history of your appointments, as well as the current upcoming appointment.</h3>
-            <table class="table" id="myTable" >
+            <table class="table" id="list" >
                 <thead style="font-size: 25px; ">
                     <tr>
                         <th>DATE</th>
@@ -78,9 +79,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>DATE</td>
-                        <td>HOUR</td>
-                        <td>SYMPTOMS</td>
+                        <td>18-Jan-2021</td>
+                        <td>14</td>
+                        <td>Headache</td>
                         <td>Upcoming</td>
                         <td><button type="button" class="btn btn-outline-dark" onclick="deleteRow(this)">CANCEL</button></button></td>
                     </tr>

@@ -16,11 +16,10 @@ function AddEntry(){
     localStorage.setItem('notes', notesVal);
     localStorage.setItem('todayDate', today);
     window.location.href = "/patientSymptomsJournal/symptoms_journal.html";
-    RefreshTable();
 }
 
 function RefreshTable(){
-    var table = document.getElementById("symptomsTable");
+    var table = document.getElementById("list");
     var symptoms = localStorage.getItem('symptoms');
     var feeling = localStorage.getItem('feeling');
     var notes = localStorage.getItem('notes');
@@ -40,13 +39,19 @@ function RefreshTable(){
     cell3.innerHTML = `<td>${notes}</td>`;
     cell4.innerHTML = `<td>${feeling}</td>`;
     cell5.innerHTML = `<td><button type="button" class="btn btn-outline-dark" onclick="deleteRow(this)">DELETE</button></button></td> </tr>`;
-
+    
+    localStorage.clear();
 }
-
 
 function deleteRow(r) {
     var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById("symptomsTable").deleteRow(i);
+    document.getElementById("list").deleteRow(i);
   }
 
-  
+function refresh() {
+    if(localStorage.getItem("symptoms") != null) {
+        RefreshTable();
+    }
+}
+
+refresh();
