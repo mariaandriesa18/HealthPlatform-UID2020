@@ -61,6 +61,12 @@ h1 {
     width: 130px;
 }
 
+#backToNursePage {
+    margin-right: 5%;
+    background-color: black;
+    width: 130px;
+}
+
 #medicationBar {
     margin-top: 50px;
     padding: 12px;

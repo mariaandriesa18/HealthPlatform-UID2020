@@ -2,7 +2,7 @@
 function AddEntry(){
     var sympVal = document.getElementById("sympInput").value;
     var feelingVal = document.getElementById("feelingInput").value;
-    var notesVal = window.getElementById("notesInput").value;
+    var notesVal = document.getElementById("notesInput").value;
 
   
     var today = new Date();
@@ -11,11 +11,12 @@ function AddEntry(){
     var yyyy = today.getFullYear();
 
     today = mm + '-' + dd + '-' + yyyy;
-    alert(today)
     localStorage.setItem('symptoms', sympVal);
     localStorage.setItem('feeling', feelingVal);
     localStorage.setItem('notes', notesVal);
     localStorage.setItem('todayDate', today);
+    window.location.href = "/patientSymptomsJournal/symptoms_journal.html";
+    RefreshTable();
 }
 
 function RefreshTable(){
@@ -39,7 +40,6 @@ function RefreshTable(){
     cell3.innerHTML = `<td>${notes}</td>`;
     cell4.innerHTML = `<td>${feeling}</td>`;
     cell5.innerHTML = `<td><button type="button" class="btn btn-outline-dark" onclick="deleteRow(this)">DELETE</button></button></td> </tr>`;
-
 
 }
 
